@@ -1,0 +1,9 @@
+http:
+ port: '8080'
+ 
+general:
+  path: '/v1/api/sys/*'
+  apiId: '18968478'
+  
+swapi:
+ host: 'https://swapi.dev/api/people'

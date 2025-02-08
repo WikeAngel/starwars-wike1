@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+	<sub-flow name="get-characters-orchestratorSub_Flow" doc:id="4ffa12cc-7f3f-45b2-9345-db3a8bbc8c15" >
+		<logger level="INFO" doc:name="Logger" doc:id="26a358ac-4858-418a-bc37-a965ba849d30" message="#['Get Characters Orchestrator - CorrelationId: ' ++ correlationId]"/>
+		<ee:transform doc:name="Characters" doc:id="d898ab41-9bcd-4977-8733-5c577d1e86c9">
+			<ee:message>
+			</ee:message>
+			<ee:variables>
+				<ee:set-variable variableName="characters"><![CDATA[[]]]></ee:set-variable>
+			</ee:variables>
+		</ee:transform>
+		<flow-ref doc:name="get-characters-clientSub_Flow" doc:id="84ab9625-4fc2-4cf9-b8d0-879bbedc0106" name="get-characters-clientSub_Flow" />
+	</sub-flow>
+</mule>
