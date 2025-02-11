@@ -5,7 +5,7 @@
 	<!-- Se debe compartir el Business Group de Anypoint Platform -->
 	<groupId>99aa1b08-f16d-4bc1-9079-7a06614591bf</groupId>
 	<artifactId>starwars-wike</artifactId>
-	<version>1.1.0</version>
+	<version>1.1.1</version>
 	<!--  Es importante identificar que en cada versión que se despliegue en el pipeline es necsario subir la versión -->
 	<packaging>mule-application</packaging>
 
